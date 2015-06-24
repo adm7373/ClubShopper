@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>ClubShopper Options</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+      #status {
+        white-space: pre;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+  </head>
+  <body>
+<h1>
+ClubShopper Options
+</h1>
+<h4>
+Debug Mode
+</h4>
+<label>
+  <input type="checkbox" id="debug">
+  (enables troubleshooting feedback)
+</label>
+
+<h4>
+Enable Extension
+</h4>
+<label>
+  <input type="checkbox" id="on">
+  (enables PGA Value Guide info while shopping for clubs on eBay)
+</label>
+
+<div id="status"></div>
+<button id="save">Save</button>
+
+<script src="options.js"></script>
+</body>
+</html>
